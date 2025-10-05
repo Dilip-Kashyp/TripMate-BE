@@ -1,0 +1,641 @@
+INFO | 2025-09-28 11:57:57 | travel_app | Application starting up...
+INFO | 2025-09-28 12:00:32 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:00:34 | travel_app | Application starting up...
+INFO | 2025-09-28 12:00:37 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:00:38 | travel_app | Application starting up...
+INFO | 2025-09-28 12:01:33 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:01:35 | travel_app | Application starting up...
+INFO | 2025-09-28 12:01:37 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:01:38 | travel_app | Application starting up...
+INFO | 2025-09-28 12:01:47 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:01:50 | travel_app | Application starting up...
+INFO | 2025-09-28 12:02:30 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:02:32 | travel_app | Application starting up...
+INFO | 2025-09-28 12:02:33 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:02:34 | travel_app | Application starting up...
+INFO | 2025-09-28 12:06:03 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:06:04 | travel_app | Application starting up...
+INFO | 2025-09-28 12:06:08 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:06:25 | travel_app | Application starting up...
+INFO | 2025-09-28 12:06:30 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:06:31 | travel_app | Application starting up...
+INFO | 2025-09-28 12:09:10 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:27:54 | travel_app | Application starting up...
+INFO | 2025-09-28 12:29:14 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:29:21 | travel_app | Application starting up...
+INFO | 2025-09-28 12:29:29 | travel_app | GET /api/v1/ping - 404 [0.0s]
+INFO | 2025-09-28 12:29:29 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-09-28 12:30:04 | travel_app | GET /api/v1/ - 200 [0.002s]
+INFO | 2025-09-28 12:30:12 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:30:13 | travel_app | Application starting up...
+INFO | 2025-09-28 12:30:16 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:30:17 | travel_app | Application starting up...
+INFO | 2025-09-28 12:30:33 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:31:05 | travel_app | Application starting up...
+INFO | 2025-09-28 12:31:19 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:31:21 | travel_app | Application starting up...
+INFO | 2025-09-28 12:31:28 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:31:30 | travel_app | Application starting up...
+INFO | 2025-09-28 12:31:37 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:31:38 | travel_app | Application starting up...
+INFO | 2025-09-28 12:31:42 | travel_app | GET /api/v1/ - 200 [0.002s]
+INFO | 2025-09-28 12:31:42 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-09-28 12:32:03 | travel_app | GET /api/v1/ - 200 [0.001s]
+INFO | 2025-09-28 12:33:53 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:33:55 | travel_app | Application starting up...
+ERROR | 2025-09-28 12:34:06 | travel_app | Error in read_root: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 16, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+ERROR | 2025-09-28 12:34:06 | travel_app | Unexpected error at /api/v1/: object dict can't be used in 'await' expression
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 79, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 183, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    |     raise app_exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    |     raise e
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 16, in wrapper
+    |     result = await func(*args, **kwargs)
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    | TypeError: object dict can't be used in 'await' expression
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    raise app_exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    raise e
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 16, in wrapper
+    result = await func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+INFO | 2025-09-28 12:34:06 | travel_app | GET /favicon.ico - 404 [0.0s]
+INFO | 2025-09-28 12:40:49 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:40:50 | travel_app | Application starting up...
+INFO | 2025-09-28 12:40:50 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:40:52 | travel_app | Application starting up...
+INFO | 2025-09-28 12:40:53 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:40:55 | travel_app | Application starting up...
+INFO | 2025-09-28 12:40:56 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:40:57 | travel_app | Application starting up...
+INFO | 2025-09-28 12:40:59 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:41:00 | travel_app | Application starting up...
+INFO | 2025-09-28 12:41:06 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:41:07 | travel_app | Application starting up...
+INFO | 2025-09-28 12:41:08 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:41:09 | travel_app | Application starting up...
+INFO | 2025-09-28 12:41:57 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:42:29 | travel_app | Application starting up...
+ERROR | 2025-09-28 12:42:31 | travel_app | Unexpected error at /api/v1/: name 'standard_response' is not defined
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 79, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 183, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    |     raise app_exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    |     raise e  # Let global exception handler catch it
+    |     ^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    |     content=standard_response(True, success_message, result)
+    |             ^^^^^^^^^^^^^^^^^
+    | NameError: name 'standard_response' is not defined
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    raise app_exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    raise e  # Let global exception handler catch it
+    ^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    content=standard_response(True, success_message, result)
+            ^^^^^^^^^^^^^^^^^
+NameError: name 'standard_response' is not defined
+INFO | 2025-09-28 12:42:31 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-09-28 12:42:59 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:43:00 | travel_app | Application starting up...
+ERROR | 2025-09-28 12:43:03 | travel_app | Unexpected error at /api/v1/: Response() takes from 0 to 1 positional arguments but 3 were given
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 79, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 183, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    |     raise app_exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    |     raise e  # Let global exception handler catch it
+    |     ^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    |     content=Response(True, success_message, result)
+    | TypeError: Response() takes from 0 to 1 positional arguments but 3 were given
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    raise app_exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    raise e  # Let global exception handler catch it
+    ^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    content=Response(True, success_message, result)
+TypeError: Response() takes from 0 to 1 positional arguments but 3 were given
+INFO | 2025-09-28 12:43:03 | travel_app | GET /favicon.ico - 404 [0.002s]
+INFO | 2025-09-28 12:43:08 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:43:13 | travel_app | Application starting up...
+ERROR | 2025-09-28 12:43:15 | travel_app | Unexpected error at /api/v1/: Response() takes from 0 to 1 positional arguments but 3 were given
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 79, in collapse_excgroups
+  |     yield
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 183, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ~~~~~~~~~~~~~~~~~~~~~~~^^
+  |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  |         "unhandled errors in a TaskGroup", self._exceptions
+  |     ) from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ~~~~~~~~~~~~~~~~~~^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    |     self.gen.throw(value)
+    |     ~~~~~~~~~~~~~~^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    |     response = await call_next(request)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    |     raise app_exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    |     await route.handle(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    |     await self.app(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    |     raw_response = await run_endpoint_function(
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     ...<3 lines>...
+    |     )
+    |     ^
+    |   File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    |     raise e  # Let global exception handler catch it
+    |     ^^^^^^^
+    |   File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    |     content=Response(True, success_message, result)
+    | TypeError: Response() takes from 0 to 1 positional arguments but 3 were given
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 182, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_utils.py", line 85, in collapse_excgroups
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 184, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\core\middleware.py", line 20, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 159, in call_next
+    raise app_exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 308, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\dilip\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 219, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 32, in wrapper
+    raise e  # Let global exception handler catch it
+    ^^^^^^^
+  File "C:\Users\dilip\OneDrive\Desktop\new PP\BE\app\utils\decorators.py", line 28, in wrapper
+    content=Response(True, success_message, result)
+TypeError: Response() takes from 0 to 1 positional arguments but 3 were given
+INFO | 2025-09-28 12:43:15 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-09-28 12:43:43 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:43:44 | travel_app | Application starting up...
+INFO | 2025-09-28 12:43:51 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:43:52 | travel_app | Application starting up...
+INFO | 2025-09-28 12:43:55 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:44:09 | travel_app | Application starting up...
+INFO | 2025-09-28 12:44:11 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:44:12 | travel_app | Application starting up...
+INFO | 2025-09-28 12:44:17 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:44:19 | travel_app | Application starting up...
+INFO | 2025-09-28 12:44:21 | travel_app | Application shutting down...
+INFO | 2025-09-28 12:44:23 | travel_app | Application starting up...
+INFO | 2025-09-28 12:44:43 | travel_app | GET /api/v1/ - 200 [0.0s]
+INFO | 2025-09-28 12:44:43 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-09-28 14:12:23 | travel_app | Application shutting down...
+INFO | 2025-09-28 14:12:36 | travel_app | Application starting up...
+INFO | 2025-09-28 14:46:12 | travel_app | GET /api/v1/ - 200 [0.001s]
+INFO | 2025-09-28 14:46:12 | travel_app | GET /favicon.ico - 404 [0.001s]
+INFO | 2025-10-05 02:04:40 | travel_app | Application shutting down...
+INFO | 2025-10-05 02:05:03 | travel_app | Application starting up...
+INFO | 2025-10-05 02:05:20 | travel_app | GET /api/v1/ - 200 [0.001s]
+INFO | 2025-10-05 02:05:20 | travel_app | GET /favicon.ico - 404 [0.002s]
+INFO | 2025-10-05 02:05:55 | travel_app | Application shutting down...
+INFO | 2025-10-05 02:05:59 | travel_app | Application starting up...
