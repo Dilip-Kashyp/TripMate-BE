@@ -784,3 +784,270 @@ INFO | 2025-10-13 01:02:19 | travel_app | Workflow completed in 63.38s
 INFO | 2025-10-13 01:03:53 | travel_app | ======================================================================
 INFO | 2025-10-13 01:03:53 | travel_app | TripMate AI Backend shutting down...
 INFO | 2025-10-13 01:03:53 | travel_app | ======================================================================
+INFO | 2025-10-13 23:29:48 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:29:48 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:29:49 | travel_app | ======================================================================
+INFO | 2025-10-13 23:29:49 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:29:49 | travel_app | ======================================================================
+INFO | 2025-10-13 23:29:49 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:29:49 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:29:49 | travel_app | Environment: Development
+INFO | 2025-10-13 23:29:49 | travel_app | ======================================================================
+INFO | 2025-10-13 23:29:49 | travel_app | Features:
+INFO | 2025-10-13 23:29:49 | travel_app | ======================================================================
+INFO | 2025-10-13 23:29:49 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:41:32 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-13 23:41:32 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-13 23:41:32 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-13 23:41:32 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-13 23:42:35 | travel_app | Intent extraction error: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-13 23:42:35 | travel_app | Workflow completed in 63.17s
+INFO | 2025-10-13 23:42:36 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:36 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-13 23:42:36 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:42 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:42:42 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:42:42 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:42 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:42:42 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:42 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:42:42 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:42:42 | travel_app | Environment: Development
+INFO | 2025-10-13 23:42:42 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:42 | travel_app | Features:
+INFO | 2025-10-13 23:42:42 | travel_app | ======================================================================
+INFO | 2025-10-13 23:42:42 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:51:35 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:35 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-13 23:51:35 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:51:58 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:51:58 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:51:58 | travel_app | Environment: Development
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | Features:
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:51:58 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-13 23:51:58 | travel_app | ======================================================================
+INFO | 2025-10-13 23:52:03 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:52:03 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:52:04 | travel_app | ======================================================================
+INFO | 2025-10-13 23:52:04 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:52:04 | travel_app | ======================================================================
+INFO | 2025-10-13 23:52:04 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:52:04 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:52:04 | travel_app | Environment: Development
+INFO | 2025-10-13 23:52:04 | travel_app | ======================================================================
+INFO | 2025-10-13 23:52:04 | travel_app | Features:
+INFO | 2025-10-13 23:52:04 | travel_app | ======================================================================
+INFO | 2025-10-13 23:52:04 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:53:47 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:47 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-13 23:53:47 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:53 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:53:53 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:53:53 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:53 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:53:53 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:53 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:53:53 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:53:53 | travel_app | Environment: Development
+INFO | 2025-10-13 23:53:53 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:53 | travel_app | Features:
+INFO | 2025-10-13 23:53:53 | travel_app | ======================================================================
+INFO | 2025-10-13 23:53:53 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:54:09 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:09 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-13 23:54:09 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:27 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-13 23:54:27 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-13 23:54:27 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:27 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-13 23:54:27 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:27 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-13 23:54:27 | travel_app | API Version: /api/v1
+INFO | 2025-10-13 23:54:27 | travel_app | Environment: Development
+INFO | 2025-10-13 23:54:27 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:27 | travel_app | Features:
+INFO | 2025-10-13 23:54:28 | travel_app | ======================================================================
+INFO | 2025-10-13 23:54:28 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-13 23:54:59 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-13 23:54:59 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-13 23:54:59 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-13 23:54:59 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-13 23:56:02 | travel_app | Intent extraction error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-13 23:56:02 | travel_app | Workflow completed in 63.37s
+INFO | 2025-10-14 00:10:11 | travel_app | ======================================================================
+INFO | 2025-10-14 00:10:11 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:10:11 | travel_app | ======================================================================
+WARNING | 2025-10-14 00:12:12 | travel_app | Could not list models: Model.__init__() got an unexpected keyword argument 'thinking'
+INFO | 2025-10-14 00:12:12 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:12:12 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:12:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:12:12 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:12:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:12:12 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:12:12 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:12:12 | travel_app | Environment: Development
+INFO | 2025-10-14 00:12:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:12:12 | travel_app | Features:
+INFO | 2025-10-14 00:12:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:12:12 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:12:26 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:12:26 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:12:26 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-14 00:12:26 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-14 00:12:26 | travel_app | Model gemini-pro not found: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:12:26 | travel_app | Trying alternative model: gemini-pro
+INFO | 2025-10-14 00:12:27 | travel_app | Trying alternative model: models/gemini-pro
+INFO | 2025-10-14 00:12:27 | travel_app | Trying alternative model: gemini-1.0-pro
+ERROR | 2025-10-14 00:12:27 | travel_app | Model gemini-pro not found: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:12:27 | travel_app | Trying alternative model: gemini-pro
+INFO | 2025-10-14 00:12:28 | travel_app | Trying alternative model: models/gemini-pro
+INFO | 2025-10-14 00:12:28 | travel_app | Trying alternative model: gemini-1.0-pro
+ERROR | 2025-10-14 00:12:28 | travel_app | Model gemini-pro not found: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:12:28 | travel_app | Trying alternative model: gemini-pro
+INFO | 2025-10-14 00:12:29 | travel_app | Trying alternative model: models/gemini-pro
+INFO | 2025-10-14 00:12:29 | travel_app | Trying alternative model: gemini-1.0-pro
+ERROR | 2025-10-14 00:12:29 | travel_app | Intent extraction error: Gemini API failed after 3 attempts: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:12:29 | travel_app | Workflow completed in 3.54s
+INFO | 2025-10-14 00:13:59 | travel_app | ======================================================================
+INFO | 2025-10-14 00:13:59 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:13:59 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:06 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:14:06 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:14:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:06 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:14:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:06 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:14:06 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:14:06 | travel_app | Environment: Development
+INFO | 2025-10-14 00:14:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:06 | travel_app | Features:
+INFO | 2025-10-14 00:14:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:06 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:14:20 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:20 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:14:20 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:26 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:14:26 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:14:26 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:26 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:14:26 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:26 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:14:26 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:14:26 | travel_app | Environment: Development
+INFO | 2025-10-14 00:14:26 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:26 | travel_app | Features:
+INFO | 2025-10-14 00:14:26 | travel_app | ======================================================================
+INFO | 2025-10-14 00:14:26 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:14:37 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:14:37 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:14:37 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-14 00:14:37 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-14 00:15:40 | travel_app | Intent extraction error: 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:15:40 | travel_app | Workflow completed in 63.00s
+INFO | 2025-10-14 00:16:00 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:00 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:16:00 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:16:06 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:16:06 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:16:06 | travel_app | Environment: Development
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | Features:
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:16:06 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:16:06 | travel_app | ======================================================================
+INFO | 2025-10-14 00:18:33 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:18:33 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:18:33 | travel_app | ======================================================================
+INFO | 2025-10-14 00:18:33 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:18:33 | travel_app | ======================================================================
+INFO | 2025-10-14 00:18:33 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:18:33 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:18:33 | travel_app | Environment: Development
+INFO | 2025-10-14 00:18:33 | travel_app | ======================================================================
+INFO | 2025-10-14 00:18:33 | travel_app | Features:
+INFO | 2025-10-14 00:18:33 | travel_app | ======================================================================
+INFO | 2025-10-14 00:18:33 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:18:58 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:18:58 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:18:58 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-14 00:18:58 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-14 00:19:01 | travel_app | Intent extraction error: 404 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?%24alt=json%3Benum-encoding%3Dint: models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:19:01 | travel_app | Workflow completed in 3.49s
+INFO | 2025-10-14 00:20:38 | travel_app | ======================================================================
+INFO | 2025-10-14 00:20:38 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:20:38 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:25:12 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:25:12 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:25:12 | travel_app | Environment: Development
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | Features:
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:12 | travel_app | TripMate AI Backend shutting down...
+INFO | 2025-10-14 00:25:12 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:24 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-14 00:25:24 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-14 00:25:24 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:24 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-14 00:25:24 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:24 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-14 00:25:24 | travel_app | API Version: /api/v1
+INFO | 2025-10-14 00:25:24 | travel_app | Environment: Development
+INFO | 2025-10-14 00:25:24 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:24 | travel_app | Features:
+INFO | 2025-10-14 00:25:24 | travel_app | ======================================================================
+INFO | 2025-10-14 00:25:24 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-14 00:25:34 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:25:34 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-14 00:25:34 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-14 00:25:34 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-14 00:25:37 | travel_app | Intent extraction error: 404 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?%24alt=json%3Benum-encoding%3Dint: models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-14 00:25:37 | travel_app | Workflow completed in 3.43s
+INFO | 2025-10-20 12:51:00 | travel_app | Travel planning graph created successfully
+INFO | 2025-10-20 12:51:00 | travel_app | TravelAgentOrchestrator initialized with LangGraph
+INFO | 2025-10-20 12:51:00 | travel_app | ======================================================================
+INFO | 2025-10-20 12:51:00 | travel_app | TripMate AI Backend Starting...
+INFO | 2025-10-20 12:51:00 | travel_app | ======================================================================
+INFO | 2025-10-20 12:51:00 | travel_app | Framework: LangChain + LangGraph + Google Gemini
+INFO | 2025-10-20 12:51:00 | travel_app | API Version: /api/v1
+INFO | 2025-10-20 12:51:00 | travel_app | Environment: Development
+INFO | 2025-10-20 12:51:00 | travel_app | ======================================================================
+INFO | 2025-10-20 12:51:00 | travel_app | Features:
+INFO | 2025-10-20 12:51:01 | travel_app | ======================================================================
+INFO | 2025-10-20 12:51:01 | travel_app | Server ready! Visit http://localhost:8000/docs for API documentation
+INFO | 2025-10-20 12:51:53 | travel_app | Trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-20 12:51:53 | travel_app | Processing trip planning request: I want to travel from Delhi to Mumbai tomorrow morning
+INFO | 2025-10-20 12:51:53 | travel_app | Executing LangGraph workflow...
+INFO | 2025-10-20 12:51:53 | travel_app | Node: Extracting intent from user query
+ERROR | 2025-10-20 12:51:57 | travel_app | Intent extraction error: 404 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?%24alt=json%3Benum-encoding%3Dint: models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO | 2025-10-20 12:51:57 | travel_app | Workflow completed in 4.51s
+INFO | 2025-10-20 12:52:15 | travel_app | Searching trains: NDLS -> BCT
+ERROR | 2025-10-20 12:52:23 | travel_app | Error searching trains: 500 Server Error: Internal Server Error for url: https://irctc1.p.rapidapi.com/api/v3/getLiveStation?fromStationCode=NDLS&toStationCode=BCT&hours=24
+INFO | 2025-10-20 12:52:38 | travel_app | Searching station code for: Mumbai
+ERROR | 2025-10-20 12:52:47 | travel_app | Error searching station: 500 Server Error: Internal Server Error for url: https://irctc1.p.rapidapi.com/api/v1/searchStation?query=Mumbai
+INFO | 2025-10-20 12:54:25 | travel_app | Searching trains: NDLS -> BCT
+INFO | 2025-10-20 12:54:29 | travel_app | Found 0 trains
+INFO | 2025-10-20 12:55:40 | travel_app | Searching trains: NDLS -> HYD
+INFO | 2025-10-20 12:55:44 | travel_app | Found 0 trains

@@ -1,6 +1,8 @@
 """
 LangGraph workflow for intelligent travel planning
 """
+import google.generativeai as genai
+import os
 from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
@@ -14,11 +16,20 @@ import time
 from typing import Dict, Any
 import json
 
-# Initialize Gemini LLM
+
+# Initialize Gemini LLM with correct model name
+os.environ["GOOGLE_API_KEY"] = "AIzaSyCs91JBBuDqcDWMsoNIo_TLfxEJzwC4QO4"  # ensure API key is set
+os.environ["GOOGLE_API_BASE_URL"] = "https://generativelanguage.googleapis.com/v1"  # ✅ force v1 endpoint
+
+# --- Configure Google SDK ---
+genai.configure(api_key="AIzaSyCs91JBBuDqcDWMsoNIo_TLfxEJzwC4QO4")
+
+# --- Initialize LangChain Gemini ---
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",  # Updated model name
-    google_api_key=settings.GEMINI_API_KEY,
-    temperature=0.7
+    model="gemini-1.5-pro",
+    temperature=0.5,
+    max_output_tokens=1024,
+    transport="rest",  # ensure it uses REST transport
 )
 
 def extract_intent_node(state: TravelPlannerState) -> Dict[str, Any]:

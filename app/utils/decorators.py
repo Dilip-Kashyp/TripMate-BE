@@ -28,7 +28,7 @@ def Response(success_message: str = "Success"):
                     content=Response_handler(True, success_message, result)
                 )
             except Exception as e:
-                logger.exception(f"🔥 Error in {func.__name__}: {e}")
+                logger.exception(f"Error in {func.__name__}: {e}")
                 raise e  # Let global exception handler catch it
         return wrapper
     return decorator
