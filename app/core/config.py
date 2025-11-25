@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     RAPIDAPI_HOST: str = "irctc1.p.rapidapi.com"
     
     # Gemini API
-    GEMINI_API_KEY: str
+    GOOGLE_API_KEY: str 
     
     # CORS
     CORS_ORIGINS: list = ["*"]
