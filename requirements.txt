@@ -1,15 +1,15 @@
 fastapi>=0.115.0
 uvicorn>=0.32.0
-pydantic>=2.9.0
+pydantic>=2.9.0,<3.0.0
 pydantic-settings>=2.6.0
 python-dotenv>=1.0.0
 requests>=2.32.0
 
-# LangChain ecosystem - Latest versions
-langchain>=0.3.0
-langchain-google-genai>=2.0.0
-langgraph>=0.2.0
-langchain-core>=0.3.0
+# LangChain ecosystem
+langchain>=0.3.0,<0.4.0
+langchain-core>=0.3.0,<0.4.0
+langchain-google-genai>=2.0.0,<3.0.0
+langgraph>=0.2.0,<0.3.0
 
 # Additional utilities
 python-multipart>=0.0.12

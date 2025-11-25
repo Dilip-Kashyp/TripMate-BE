@@ -14,7 +14,7 @@ from app.utils.exceptions import (
 # Initialize FastAPI app
 app = FastAPI(
     title="TripMate AI - Travel Planning API",
-    description="Intelligent train travel planning powered by LangChain, LangGraph, and Google Gemini",
+    description="Intelligent train travel planning.",
     version="2.0.0",
     openapi_url=f"{settings.API_V1_STR}/openapi.json",
     docs_url="/docs",
@@ -40,9 +40,6 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 
 @app.on_event("startup")
 async def startup_event():
-    """
-    Startup event handler
-    """
     logger.info("=" * 70)
     logger.info("TripMate AI Backend Starting...")
     logger.info("=" * 70)
@@ -51,33 +48,26 @@ async def startup_event():
     logger.info(f"Environment: {'Production' if not settings.API_V1_STR else 'Development'}")
     logger.info("=" * 70)
     logger.info("Features:")
-    logger.info("  ✓ LangGraph workflow engine")
-    logger.info("  ✓ Google Gemini AI integration")
-    logger.info("  ✓ LangChain tools for IRCTC API")
-    logger.info("  ✓ Intelligent intent extraction")
-    logger.info("  ✓ Multi-step agent reasoning")
-    logger.info("  ✓ Real-time train data")
+    logger.info("   LangGraph workflow engine")
+    logger.info("   Google Gemini AI integration")
+    logger.info("   LangChain tools for IRCTC API")
+    logger.info("   Intelligent intent extraction")
+    logger.info("   Multi-step agent reasoning")
+    logger.info("   Real-time train data")
     logger.info("=" * 70)
     logger.info("Server ready! Visit http://localhost:8000/docs for API documentation")
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    """
-    Shutdown event handler
-    """
     logger.info("=" * 70)
-    logger.info("TripMate AI Backend shutting down...")
+    logger.info("Backend shutting down...")
     logger.info("=" * 70)
 
 @app.get("/")
 async def root():
-    """
-    Root endpoint
-    """
     return {
         "message": "Welcome to TripMate AI Backend",
         "version": "2.0.0",
-        "framework": "LangChain + LangGraph",
         "powered_by": "Google Gemini",
         "documentation": "/docs",
         "api_base": settings.API_V1_STR,

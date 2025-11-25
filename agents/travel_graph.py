@@ -1,13 +1,11 @@
-"""
-LangGraph workflow for intelligent travel planning
-"""
-import google.generativeai as genai
 import os
 from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from agents.state import TravelPlannerState
+from app.constants.agent_constant import EXTRACTING_INTENT_ERROR, EXTRACTING_INTENT_NODE
+from app.constants.prompts import TRAVEL_INTENT_PROMPT
 from tools.rail_tool import search_trains, get_station_code_from_city
 from app.core.config import settings
 from app.core.logger import logger
@@ -17,44 +15,24 @@ from typing import Dict, Any
 import json
 
 
-# Initialize Gemini LLM with correct model name
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCs91JBBuDqcDWMsoNIo_TLfxEJzwC4QO4"  # ensure API key is set
-os.environ["GOOGLE_API_BASE_URL"] = "https://generativelanguage.googleapis.com/v1"  # ✅ force v1 endpoint
-
-# --- Configure Google SDK ---
-genai.configure(api_key="AIzaSyCs91JBBuDqcDWMsoNIo_TLfxEJzwC4QO4")
-
-# --- Initialize LangChain Gemini ---
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-pro",
+    model="gemini-2.0-flash",
     temperature=0.5,
     max_output_tokens=1024,
-    transport="rest",  # ensure it uses REST transport
+    transport="rest",  
+    google_api_key=settings.GOOGLE_API_KEY
 )
 
 def extract_intent_node(state: TravelPlannerState) -> Dict[str, Any]:
-    """
-    Node 1: Extract travel intent from user query using LLM
-    """
-    logger.info("Node: Extracting intent from user query")
-    start_time = time.time()
-    
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", """You are a travel intent extraction expert. Extract structured travel information from user queries.
-        
-Extract these fields:
-- from_location: origin city (or null)
-- to_location: destination city (or null)
-- travel_date: date mentioned (or "today")
-- time_preference: morning/afternoon/evening/night/any
-- budget_preference: budget/standard/premium/any
-- direct_only: true if user wants only direct routes
-
-Return ONLY valid JSON, no markdown or extra text."""),
-        ("user", "Extract intent from: {query}")
-    ])
-    
     try:
+        logger.info(EXTRACTING_INTENT_NODE)
+        start_time = time.time()
+        
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", TRAVEL_INTENT_PROMPT),
+            ("user", "Extract intent from: {query}")
+        ])
+    
         chain = prompt | llm | JsonOutputParser()
         intent = chain.invoke({"query": state["user_query"]})
         
@@ -72,20 +50,17 @@ Return ONLY valid JSON, no markdown or extra text."""),
             "processing_time": processing_time,
             "timestamp": datetime.now().isoformat()
         }
-        
+
     except Exception as e:
-        logger.error(f"Intent extraction error: {str(e)}")
+        logger.error(f"{EXTRACTING_INTENT_ERROR} {str(e)}")
         return {
             **state,
-            "error": f"Failed to extract intent: {str(e)}",
+            "error": f"{EXTRACTING_INTENT_ERROR} {str(e)}",
             "current_step": "error"
         }
 
 def validate_locations_node(state: TravelPlannerState) -> Dict[str, Any]:
-    """
-    Node 2: Validate and get station codes for locations
-    """
-    logger.info("Node: Validating locations and getting station codes")
+    logger.info("")
     
     from_loc = state.get("from_location")
     to_loc = state.get("to_location")
@@ -244,29 +219,26 @@ def generate_recommendations_node(state: TravelPlannerState) -> Dict[str, Any]:
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are an expert Indian Railways travel advisor. Analyze the available trains and provide personalized recommendations.
+            Consider:
+            1. Departure and arrival times
+            2. Journey duration
+            3. Train type and class
+            4. User's time preferences
 
-Consider:
-1. Departure and arrival times
-2. Journey duration
-3. Train type and class
-4. User's time preferences
+            Provide:
+            - Top 3 train recommendations with clear reasoning
+            - Pros and cons of each option
+            - Best overall choice
 
-Provide:
-- Top 3 train recommendations with clear reasoning
-- Pros and cons of each option
-- Best overall choice
-
-Be concise, friendly, and practical."""),
-        ("user", """User preferences:
-- From: {from_location} ({from_code})
-- To: {to_location} ({to_code})
-- Time preference: {time_pref}
-- Budget: {budget_pref}
-
-Available trains:
-{trains_data}
-
-Provide your recommendations:""")
+            Be concise, friendly, and practical."""),
+            ("user", """User preferences:
+            - From: {from_location} ({from_code})
+            - To: {to_location} ({to_code})
+            - Time preference: {time_pref}
+            - Budget: {budget_pref}
+                Available trains:
+                {trains_data}
+            Provide your recommendations:""")
     ])
     
     try:

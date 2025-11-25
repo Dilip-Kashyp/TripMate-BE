@@ -1,13 +1,12 @@
 from fastapi import APIRouter, Query, Body
 from pydantic import BaseModel, Field
+from app.constants.agent_constant import ERROR_STATE, INVOKE_AGENT_STATE
 from services.agent_orchestrator import TravelAgentOrchestrator
 from tools.rail_tool import search_trains, search_station_code
 from app.core.logger import logger
 from typing import Optional, List
 
 router = APIRouter()
-
-# Initialize the LangGraph-powered agent
 agent = TravelAgentOrchestrator()
 
 class TripPlanRequest(BaseModel):
@@ -26,35 +25,18 @@ class ConversationRequest(BaseModel):
     message: str = Field(..., description="User message")
     conversation_history: Optional[List[dict]] = Field(default=[], description="Previous messages")
 
-@router.post("/plan-trip", 
-             summary="AI-Powered Trip Planning",
-             description="Use natural language to plan your train journey. The AI agent will understand your query, fetch relevant trains, and provide intelligent recommendations.")
+@router.post("/plan-trip")
 async def plan_trip(request: TripPlanRequest):
-    """
-    **Main AI endpoint** - Natural language trip planning with LangGraph workflow
-    
-    Examples:
-    - "Find trains from Delhi to Mumbai tomorrow morning"
-    - "I need to travel from Hyderabad to Bangalore in the evening"
-    - "Show me overnight trains from Chennai to Kolkata"
-    
-    The agent will:
-    1. Extract your travel intent (locations, time, preferences)
-    2. Fetch available trains from IRCTC
-    3. Analyze and filter based on your preferences
-    4. Generate AI-powered recommendations
-    """
     try:
-        logger.info(f"Trip planning request: {request.query}")
+        logger.info(f"{INVOKE_AGENT_STATE} {request.query}")
         result = agent.plan_trip(request.query)
         return result
         
     except Exception as e:
-        logger.error(f"Error in plan_trip endpoint: {str(e)}", exc_info=True)
+        logger.error(f"{ERROR_STATE} {str(e)}", exc_info=True)
         return {
             "success": False,
-            "error": f"Failed to process trip planning request: {str(e)}",
-            "query": request.query
+            "error": f"{ERROR_STATE} {str(e)}",
         }
 
 @router.post("/trains/search",

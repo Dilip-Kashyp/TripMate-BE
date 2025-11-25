@@ -1,0 +1,25 @@
+from typing import Dict, Any
+
+DEFAULT_TRAVEL_STATE: Dict[str, Any] = {
+    "user_query": None,
+    "from_location": None,
+    "to_location": None,
+    "from_station_code": None,
+    "to_station_code": None,
+    "travel_date": None,
+    "time_preference": None,
+    "budget_preference": None,
+    "direct_only": False,
+    "available_trains": [],
+    "total_trains": 0,
+    "filtered_trains": [],
+    "top_recommendations": [],
+    "ai_recommendation": "",
+    "reasoning": "",
+    "current_step": "initialized",
+    "error": None,
+    "needs_clarification": False,
+    "clarification_message": None,
+    "processing_time": 0.0,
+    "timestamp": "",
+}
